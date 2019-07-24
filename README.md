@@ -91,8 +91,8 @@ class BaseResNet50(chainer.Chain):
 
 ```
 
-分類に使用する時はtrain_resnet.pyで以下のようにManifoldMixupClassiferで包みます。
-* train_resnet.py
+分類に使用する時はtrain_manifoldmixup.pyで以下のようにManifoldMixupClassiferで包みます。
+* train_manifoldmixup.py
 ```gherkin=
  model = ManifoldMixupClassifer(ResNet50_Manifold_Mixup(),
                                    mixup_hidden=True, mixup_alpha=0.2,
