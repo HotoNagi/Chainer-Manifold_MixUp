@@ -23,7 +23,7 @@ chainerでManifold MixUp実装してます。
 論文著者による実装（pytorch）を参考にして書きました。
 
 * model/resnet_fine_manifoldmixup.py
-```gherkin=
+```python
 class BaseResNet50(chainer.Chain):
 
     def __init__(self):
@@ -93,10 +93,12 @@ class BaseResNet50(chainer.Chain):
 
 分類に使用する時はtrain_manifoldmixup.pyで以下のようにManifoldMixupClassiferで包みます。
 * train_manifoldmixup.py
-```gherkin=
- model = ManifoldMixupClassifer(ResNet50_Manifold_Mixup(),
-                                   mixup_hidden=True, mixup_alpha=0.2,
-                                   layer_mix=None)
+
+
+```python
+model = ManifoldMixupClassifer(ResNet50_Manifold_Mixup(),
+                        	mixup_hidden=True, mixup_alpha=0.2,
+                                layer_mix=None)
 
 ```
 
