@@ -1,17 +1,9 @@
----
-title: 'Project documenta'
-disqus: hackmd
----
-
 Chainer-Manifold_MixUp
 ===
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
 ![build](https://img.shields.io/appveyor/ci/:user/:repo.svg)
 ![chat](https://img.shields.io/discord/:serverId.svg)
 
-## 目次
-
-[TOC]
 
 
 Manifold Mixup
@@ -28,6 +20,7 @@ chainerでManifold MixUp実装してます。
 モデルはとりあえずresnet50だけで試しています。
 
 主にResNet50モデルのforward部分を大幅にいじりました。
+論文著者による実装（pytorch）を参考にして書きました。
 
 * model/resnet_fine_manifoldmixup.py
 ```gherkin=
@@ -107,7 +100,6 @@ class BaseResNet50(chainer.Chain):
 
 ```
 
-
 結果
 ---
 今回はCIFAR10の学習で比較してみた（α=0.2）。
@@ -120,11 +112,4 @@ validation accuracy : 0.78291
 ![](https://i.imgur.com/kTuyJaI.png)
 validation accuracy : 0.814062
 
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
-
 ###### tags: `Mixup` `Classification` `chainer`
-
