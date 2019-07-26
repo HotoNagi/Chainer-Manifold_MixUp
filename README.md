@@ -114,11 +114,11 @@ validation accuracy : 0.814062
 実行
 ---
 
-*Manifold Mixupなし
+* Manifold Mixupなし
 ```
 python train_resnet.py
 ```
-*Manifold Mixupあり
+* Manifold Mixupあり
 ```
 python train_manifoldmixup.py
 ```
