@@ -111,4 +111,16 @@ validation accuracy : 0.78291
 ![](https://i.imgur.com/kTuyJaI.png)
 validation accuracy : 0.814062
 
+実行
+---
+
+*Manifold Mixupなし
+```
+python train_resnet.py
+```
+*Manifold Mixupあり
+```
+python train_manifoldmixup.py
+```
+
 ###### tags: `Mixup` `Classification` `chainer`
